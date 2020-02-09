@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i");
+::selection {
+  background-color: #f8b81d;
+  color: #ffffff;
+}
+.button_all {
+  font: 700 18px/59px "Roboto", "Cairo", sans-serif;
+  width: 180px;
+  text-align: center;
+  background: #ffb300;
+  display: block;
+  border: 0;
+  color: #222;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+}
+.button_all:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #222;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.button_all:hover,
+.button_all:focus {
+  color: #fff !important;
+}
+.button_all:hover:before,
+.button_all:focus:before {
+  transform: scaleY(1);
+}
+.tittle {
+  text-align: center;
+  text-transform: uppercase;
+}
+.tittle h2 {
+  font: 400 24px "Oswald", sans-serif;
+  color: #222;
+  padding-top: 90px;
+  position: relative;
+}
+.tittle h2:after {
+  content: "";
+  position: absolute;
+  background: #ffb300;
+  height: 5px;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+.tittle h4 {
+  font: 400 14px "Roboto", "Cairo", sans-serif;
+  color: #555;
+  padding-top: 55px;
+}
+.subtittle h2 {
+  font: 700 36px "Roboto", "Cairo", sans-serif;
+  color: #222;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}
+.subtittle h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80px;
+  background: #222;
+  left: 0;
+  bottom: -22px;
+}
+.subtittle h5 {
+  font: 400 14px "Roboto", "Cairo", sans-serif;
+  color: #555;
+  padding-top: 22px;
+}
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../images/preloader.gif);
+}

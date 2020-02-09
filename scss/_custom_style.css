@@ -1,0 +1,13 @@
+.break {
+  padding: 3rem 0;
+  margin: 5rem 0;
+}
+.break bac a {
+  width: 200px;
+  background: #333333;
+  border-radius: 10px;
+  color: #fff;
+}
+.break bac a button {
+  border-radius: 10px;
+}

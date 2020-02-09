@@ -1,0 +1,20 @@
+.services-category .category-card {
+  margin-bottom: 3rem;
+}
+.services-category .category-card .fix-img {
+  max-height: 200px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 12px;
+}
+.services-category .category-card .fix-img img {
+  max-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.services-category .category-card .fix-img:hover img {
+  transform: scale(1.2);
+}
+.services-category .category-card h4 {
+  padding: 2rem 0;
+  text-align: center;
+}
