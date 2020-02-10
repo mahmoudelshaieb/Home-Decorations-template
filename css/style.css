@@ -313,7 +313,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 @media (max-width: 766px) {
   .header_aera .navbar-header .navbar-brand img {
-    width: 70px;
+    width: 80px;
   }
 }
 .header_aera .navbar-collapse .navbar-nav.navbar-right li a {
@@ -326,11 +326,30 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 .header_aera .navbar-collapse .navbar-nav.navbar-right li a:hover, .header_aera .navbar-collapse .navbar-nav.navbar-right li a:focus {
   color: #FFB300;
 }
-.header_aera .navbar-collapse .navbar-nav.navbar-right li a i {
-  font-size: 12px;
-}
 .header_aera .navbar-collapse .navbar-nav.navbar-right li a i.lang {
   font-size: 18px;
+  display: inline-block;
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li a i.mob-icon {
+  font-size: 16px;
+  padding: 0 3rem;
+  line-height: 45px;
+  float: right;
+  clear: both;
+  display: none;
+}
+@media (max-width: 768px) {
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li a i.mob-icon {
+    display: inline-block;
+  }
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li a.fix-get-link {
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+}
+.header_aera .navbar-collapse .navbar-nav.navbar-right li a.fix-get-link:hover, .header_aera .navbar-collapse .navbar-nav.navbar-right li a.fix-get-link:focus {
+  opacity: 1;
 }
 .header_aera .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom {
   width: 100px;
@@ -367,6 +386,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 .header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul li {
   display: block;
+  text-align: left;
 }
 .header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul li a {
   line-height: normal;
@@ -857,7 +877,6 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   padding-top: 17px;
   display: block;
   max-height: 40px;
-  overflow: hidden;
 }
 .what_we_area .construction_iner .construction .cns-content p {
   font: 400 14px/26px "Roboto", "Cairo", sans-serif;

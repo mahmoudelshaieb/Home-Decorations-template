@@ -13,14 +13,14 @@
                 }
             }); 
         };
-        $('.header_aera .navbar-collapse .navbar-nav.navbar-right li').on('click', function() {
-            if($(this).hasClass('open')) {
-                $(this).find('i').css({
+        $('.header_aera .navbar-collapse .navbar-nav.navbar-right li i.mob-icon').on('click', function() {
+            if($('.header_aera .navbar-collapse .navbar-nav.navbar-right li').hasClass('open')) {
+                $('.header_aera .navbar-collapse .navbar-nav.navbar-right li').find(this).css({
                     transform: 'rotate(0deg)'
                 })
             } else {
-                $(this).find('i').css({
-                    transform: 'rotate(180deg)'
+                $('.header_aera .navbar-collapse .navbar-nav.navbar-right li').find(this).css({
+                    transform: 'rotate(45deg)'
                 })
             }
         })

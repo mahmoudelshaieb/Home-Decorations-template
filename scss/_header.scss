@@ -125,7 +125,7 @@
                 width: 100px;
                 max-width: 100%;
                 @media (max-width: 766px) {
-                    width: 70px;
+                    width: 80px;
                 }
             }
         }
@@ -142,11 +142,28 @@
                     &:hover, &:focus{
                         color: $bc;
                     }
-                    i{
-                        font-size: 12px;
-                    }
                     i.lang {
                         font-size: 18px;
+                        display: inline-block;
+                    }
+                    i.mob-icon{
+                        font-size: 16px;
+                        padding: 0 3rem;
+                        line-height: 45px;
+                        float: right;
+                        clear: both;
+                        display: none;
+                        @media (max-width: 768px) {
+                            display: inline-block;
+                        }
+                    }
+                }
+                a.fix-get-link {
+                    position: absolute;
+                    z-index: 10;
+                    opacity: 0;
+                    &:hover, &:focus {
+                        opacity: 1;
                     }
                 }
                 .nav_searchFrom{
@@ -182,6 +199,7 @@
                         }
                         li{
                             display: block;
+                            text-align: left;
                             a{
                                 line-height: normal;
                                 font: 700 14px/normal $roboto;
